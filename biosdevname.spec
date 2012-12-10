@@ -37,3 +37,18 @@ name (e.g. eth0).
 %{_prefix}/sbin/%{name}
 /lib/udev/rules.d/71-biosdevname.rules
 %{_mandir}/man1/%{name}.1*
+
+
+%changelog
+* Mon Jul 30 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.4.1-1
++ Revision: 811466
+- version update  0.4.1
+
+* Sat May 19 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.4.0-1
++ Revision: 799611
+- version update 0.4.0
+
+* Wed Nov 09 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.3.11-1
++ Revision: 729511
+- imported package biosdevname
+
