@@ -1,6 +1,6 @@
 Name:		biosdevname
 Version:	0.4.1
-Release:	2
+Release:	3
 Summary:	Udev helper for naming devices per BIOS names
 Group:		System/Base 
 License:	GPLv2
