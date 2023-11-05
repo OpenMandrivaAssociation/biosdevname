@@ -1,6 +1,6 @@
 Name:		biosdevname
-Version:	0.4.1
-Release:	3
+Version:	0.7.2
+Release:	1
 Summary:	Udev helper for naming devices per BIOS names
 Group:		System/Base 
 License:	GPLv2
@@ -9,8 +9,8 @@ URL:		http://linux.dell.com/files/%{name}
 # arches don't expect the PCI bus to be sorted breadth-first, or of
 # so, there haven't been any comments about that on LKML.
 Source0:	http://linux.dell.com/files/%{name}/permalink/%{name}-%{version}.tar.gz
-BuildRequires:	pciutils-devel
-BuildRequires:	zlib-devel
+BuildRequires:	pkgconfig(libpci)
+BuildRequires:	pkgconfig(zlib)
 BuildRequires:	udev
 Requires:	udev
 
@@ -22,15 +22,14 @@ the chassis is "Gb1") doesn't map directly and obviously to the kernel
 name (e.g. eth0).
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure 
-
-%make
+%make_build
 
 %install
-%makeinstall_std install-data
+%make_install install-data
 
 %files
 %doc COPYING README
