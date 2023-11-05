@@ -33,7 +33,7 @@ name (e.g. eth0).
 
 %files
 %doc COPYING README
-%{_prefix}/sbin/%{name}
+#{_prefix}/sbin/%{name}
 /lib/udev/rules.d/71-biosdevname.rules
 %{_mandir}/man1/%{name}.1*
 
