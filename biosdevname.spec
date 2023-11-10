@@ -26,6 +26,7 @@ name (e.g. eth0).
 %autosetup -p1
 
 %build
+autoreconf -i
 %configure 
 %make_build
 
