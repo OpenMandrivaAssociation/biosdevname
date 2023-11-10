@@ -1,5 +1,5 @@
 Name:		biosdevname
-Version:	0.7.2
+Version:	0.7.3
 Release:	1
 Summary:	Udev helper for naming devices per BIOS names
 Group:		System/Base 
@@ -8,7 +8,8 @@ URL:		http://linux.dell.com/files/%{name}
 # SMBIOS only exists on these arches.  It's also likely that other
 # arches don't expect the PCI bus to be sorted breadth-first, or of
 # so, there haven't been any comments about that on LKML.
-Source0:	http://linux.dell.com/files/%{name}/permalink/%{name}-%{version}.tar.gz
+Source0:  https://github.com/dell/biosdevname/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+#Source0:	http://linux.dell.com/files/%{name}/permalink/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(libpci)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	udev
