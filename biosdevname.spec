@@ -4,7 +4,7 @@ Release:	1
 Summary:	Udev helper for naming devices per BIOS names
 Group:		System/Base 
 License:	GPLv2
-URL:		http://linux.dell.com/files/%{name}
+URL:		https://linux.dell.com/files/%{name}
 # SMBIOS only exists on these arches.  It's also likely that other
 # arches don't expect the PCI bus to be sorted breadth-first, or of
 # so, there haven't been any comments about that on LKML.
