@@ -10,6 +10,11 @@ URL:		https://linux.dell.com/files/%{name}
 # so, there haven't been any comments about that on LKML.
 Source0:  https://github.com/dell/biosdevname/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 #Source0:	http://linux.dell.com/files/%{name}/permalink/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libpci)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	udev
